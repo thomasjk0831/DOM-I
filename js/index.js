@@ -40,3 +40,56 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let siteTitle = document.querySelector('title')
+siteTitle.textContent = "Great Idea!"
+
+let links = document.getElementsByTagName('a')
+links[0].textContent = siteContent["nav"]["nav-item-1"]
+links[1].textContent = siteContent["nav"]["nav-item-2"]
+links[2].textContent = siteContent["nav"]["nav-item-3"]
+links[3].textContent = siteContent["nav"]["nav-item-4"]
+links[4].textContent = siteContent["nav"]["nav-item-5"]
+links[5].textContent = siteContent["nav"]["nav-item-6"]
+
+let h1 = document.querySelector('.cta-text h1')
+h1.innerText = "DOM \n is \n awesome"
+
+let button = document.querySelector('button')
+button.textContent = siteContent["cta"]["button"]
+
+let ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent["cta"]["img-src"]
+
+let textContentH4 = document.querySelectorAll('.text-content h4')
+let textContentP = document.querySelectorAll('.text-content p')
+
+textContentH4[0].textContent = siteContent["main-content"]["features-h4"]
+textContentP[0].textContent = siteContent["main-content"]["features-content"]
+
+textContentH4[1].textContent = siteContent["main-content"]["about-h4"]
+textContentP[1].textContent = siteContent["main-content"]["about-content"]
+
+textContentH4[2].textContent = siteContent["main-content"]["services-h4"]
+textContentP[2].textContent = siteContent["main-content"]["services-content"]
+
+textContentH4[3].textContent = siteContent["main-content"]["product-h4"]
+textContentP[3].textContent = siteContent["main-content"]["product-content"]
+
+textContentH4[4].textContent = siteContent["main-content"]["vision-h4"]
+textContentP[4].textContent = siteContent["main-content"]["vision-content"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
