@@ -46,13 +46,30 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let siteTitle = document.querySelector('title')
 siteTitle.textContent = "Great Idea!"
 
-let links = document.getElementsByTagName('a')
+let links = document.querySelectorAll('a')
 links[0].textContent = siteContent["nav"]["nav-item-1"]
 links[1].textContent = siteContent["nav"]["nav-item-2"]
 links[2].textContent = siteContent["nav"]["nav-item-3"]
 links[3].textContent = siteContent["nav"]["nav-item-4"]
 links[4].textContent = siteContent["nav"]["nav-item-5"]
 links[5].textContent = siteContent["nav"]["nav-item-6"]
+
+links.forEach( (item) => {
+  item.style.color = "green";
+})
+
+let nav = document.querySelector('nav')
+let a1 = document.createElement('a')
+a1.textContent = "anc1";
+let a2 = document.createElement('a')
+a2.textContent = "anc2";
+nav.appendChild(a1)
+nav.prepend(a2)
+
+
+
+
+
 
 let h1 = document.querySelector('.cta-text h1')
 h1.innerText = siteContent["cta"]["h1"]
