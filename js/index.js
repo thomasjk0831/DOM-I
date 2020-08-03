@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM \n Is \n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street\n Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -55,7 +55,7 @@ links[4].textContent = siteContent["nav"]["nav-item-5"]
 links[5].textContent = siteContent["nav"]["nav-item-6"]
 
 let h1 = document.querySelector('.cta-text h1')
-h1.innerText = "DOM \n is \n awesome"
+h1.innerText = siteContent["cta"]["h1"]
 
 let button = document.querySelector('button')
 button.textContent = siteContent["cta"]["button"]
@@ -80,6 +80,21 @@ textContentP[3].textContent = siteContent["main-content"]["product-content"]
 
 textContentH4[4].textContent = siteContent["main-content"]["vision-h4"]
 textContentP[4].textContent = siteContent["main-content"]["vision-content"]
+
+let middleImg = document.querySelector('.middle-img')
+middleImg.src = "img/mid-page-accent.jpg"
+
+let contact = document.querySelector(".contact h4")
+contact.textContent = siteContent["contact"]["contact-h4"]
+
+let contactP = document.querySelectorAll(".contact p")
+contactP[0].innerText = siteContent["contact"]["address"]
+contactP[1].textContent = siteContent["contact"]["phone"]
+contactP[2].textContent = siteContent["contact"]["email"]
+
+let footerP = document.querySelector("footer p")
+footerP.textContent = siteContent["footer"]["copyright"]
+
 
 
 
